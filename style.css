@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  .navbar {
+    height: 100px;
+    /** width 700 rakhna pura ajata navbar ka full screen**/
+    width: 700;
+    background-color: rgb(110, 165, 248);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+    border-bottom: 2px solid rgb(110, 165, 248);
+  }
+  .navbarp2 {
+    display: flex;
+    gap: 2vw;
+    font-weight: 700;
+  }
+  .navbar h2 {
+    font-size: 3vw;
+    font-weight: 700;
+  }
+  .navbar h4 {
+    font-size: 1.5vw;
+  }
+  .navbar button {
+    font-size: 1vw;
+    padding: 0.5vw 1.5vw;
+    background-color: rgb(16, 59, 122);
+    color: #ffff;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+  .content {
+    height: calc(100% - 100px);
+    width: 700;
+    /**background-color: pink;
+    **/
+    display: flex;
+    position: relative;
+  }
+  .left {
+    height: 100%;
+    width: 50%;
+    /**background-color: crimson;
+    **/
+    padding: 5vw 4vw;
+  }
+  .left h1 {
+    font-size: 4vw;
+    line-height: 4.4vw;
+  }
+  .left h1 span {
+    color: rgb(110, 165, 248);
+  }
+  .left p {
+    font-size: 1.5vw;
+    font-weight: 600;
+    width: 80%;
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+  }
+  button {
+    font-size: 1.9vw;
+    padding: 0.2vw 0.3vw;
+    background-color: rgb(110, 165, 248);
+    color: #ffff;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+  .right {
+    height: 100%;
+    width: 50%;
+  }
+  .right img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  @media (max-width: 600px) {
+    .navbar {
+      height: 60px;
+      background-color: rgb(110, 165, 248);
+      color: white;
+      padding: 0 4vw;
+    }
+    .navbar h2 {
+      font-size: 7vw;
+    }
+    /** navbar acounts etc**/
+    .navbar h4 {
+      font-size: 2.6vw;
+    }
+    .navbar button {
+      font-size: 2.9vw;
+      padding: 0.2vw 1.5vw;
+      font-weight: 700;
+      border: none;
+    }
+    .content {
+      height: calc(100% - 60px);
+      flex-direction: column;
+    }
+    .left {
+      width: 100%;
+      height: 40%;
+    }
+    .left h1 {
+      font-size: 5vw;
+      line-height: 7vw;
+    }
+    .left p {
+      font-size: 2.5vw;
+    }
+    .right {
+      width: 100%;
+      height: 70%;
+    }
+    button {
+      font-size: 2.9vw;
+      padding: 0.8vw 1vw;
+      border-radius: 5px;
+      font-weight: 700;
+    }
+  }
+  
